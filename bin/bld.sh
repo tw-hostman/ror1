@@ -2,6 +2,10 @@
 # exit on error
 set -o errexit
 
+rbenv install -l
+rbenv install 2.6.5
+rbenv rehash
+
 gem install bundler
 
 bundle install
